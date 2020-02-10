@@ -81,43 +81,18 @@ $(function () {
     $(document).ready(function () {
         $("[data-js=open]").on("click", function (e) {
             popupOpenClose($(".popup"));
-            // let image_src = $(e.target).find('img')[0].src;
             let image_src = $(e.target).find('img')[0].src;
-
-
-
             let text = $(e.target).find('h1').text();
             let text2 = $(e.target).find('p').text();
-            // $('.img_pop').attr('src', `${image_src}`);
             $('.img_pop').attr('src', `${image_src}`);
-
-
-
             $('.pic_title_pop').text(`${text}`);
             $('.pic_desc_pop').text(`${text2}`);
         });
     });
-    // $(document).ready(function () {
-    //     $("[data-js=open_v]").on("click", function (e) {
-    //         popupOpenClose($(".popup_v"));
-    //         let video_src = $('.pop2').find('video')[0].src;
-    //         let text = $('.pop2').find('h1').text();
-    //         let text2 = $('.pop2').find('p').text();
-    //         $('.video_pop').attr('src', `${video_src}`);
-    //         $('.pic_title_pop').text(`${text}`);
-    //         $('.pic_desc_pop').text(`${text2}`);
-    //     });
-    // });
 
     $(".search a").click(function () {
         $(this).parent(".search").toggleClass("collapsed");
     });
-
-   
-
-
-
-
 
 });
 

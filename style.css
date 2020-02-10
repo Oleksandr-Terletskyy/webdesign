@@ -111,7 +111,7 @@ a.burger1.active span:after {
 
 .header1 {
     background: rgba(27, 27, 27, 0.8);
-    height: 100vh!important;
+    height: 100vh !important;
     width: 51%;
     position: fixed;
     right: 0;
@@ -393,8 +393,6 @@ a.font_sets:hover {
     background-color: rgb(255, 255, 255);
     color: #E38687;
     transition: 1s;
-
-
 }
 
 .double {
@@ -422,12 +420,14 @@ a.font_sets:hover {
     text-align: center;
     padding-top: 43px;
 }
-video{
+
+video {
     position: absolute;
     top: 0;
     bottom: 0;
 }
-.video_pop{
+
+.video_pop {
     position: relative;
     top: 0;
     bottom: 0;
@@ -562,13 +562,14 @@ video{
         background-size: cover;
     }
 
-    .popup >div {
+    .popup>div {
         max-height: 50%;
     }
 }
 
 
-.popup, .popup_v {
+.popup,
+.popup_v {
     background: rgba(100, 100, 100, 0.5);
     position: fixed;
     display: none;
@@ -586,24 +587,7 @@ video{
 
 
 
-.popup >div {
-    height: 70%;
-    max-width: 70%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    background: #fff;
-    padding: 30px;
-    z-index: 999999999;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.popup_v >div {
+.popup>div {
     height: 70%;
     max-width: 70%;
     position: fixed;
@@ -621,23 +605,43 @@ video{
     justify-content: space-between;
 }
 
-.popup >div>h1 {
-    color: black;
+.popup_v>div {
+    height: 70%;
+    max-width: 70%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    padding: 30px;
+    z-index: 999999999;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.popup_v >div>h1 {
+
+.popup>div>h1 {
     color: black;
 }
 
-.popup >div>p {
+.popup_v>div>h1 {
     color: black;
 }
-.popup_v >div>p {
+
+.popup>div>p {
+    color: black;
+}
+
+.popup_v>div>p {
     color: black;
 }
 
 
 @media (max-width: 320px) {
-    .popup >div {
+    .popup>div {
         max-height: 35%;
     }
 }
